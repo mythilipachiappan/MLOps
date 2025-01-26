@@ -1,0 +1,37 @@
+artifact_path: model
+flavors:
+  python_function:
+    artifacts:
+      features_transformer:
+        path: artifacts/features.joblib
+        uri: /var/folders/_m/6szfsvs108g7m7t_v620ch540000gn/T/tmpzuyawe2q/features.joblib
+      model:
+        path: artifacts/model.keras
+        uri: /var/folders/_m/6szfsvs108g7m7t_v620ch540000gn/T/tmpzuyawe2q/model.keras
+      target_transformer:
+        path: artifacts/target.joblib
+        uri: /var/folders/_m/6szfsvs108g7m7t_v620ch540000gn/T/tmpzuyawe2q/target.joblib
+    cloudpickle_version: 3.1.1
+    code: code
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.12.0
+    streamable: false
+mlflow_version: 2.17.1
+model_size_bytes: 28121
+model_uuid: 16fc443e7a0d459e9e8c2a341bc079bb
+run_id: 8dfda60f97504d81b10c49c1b7e8c7cf
+signature:
+  inputs: '[{"type": "string", "name": "island", "required": true}, {"type": "double",
+    "name": "culmen_length_mm", "required": true}, {"type": "double", "name": "culmen_depth_mm",
+    "required": true}, {"type": "double", "name": "flipper_length_mm", "required":
+    true}, {"type": "double", "name": "body_mass_g", "required": true}, {"type": "string",
+    "name": "sex", "required": true}]'
+  outputs: '[{"type": "string", "name": "prediction", "required": true}, {"type":
+    "double", "name": "confidence", "required": true}]'
+  params: '[{"name": "data_capture", "type": "boolean", "default": false, "shape":
+    null}]'
+utc_time_created: '2025-01-25 22:38:53.761513'
